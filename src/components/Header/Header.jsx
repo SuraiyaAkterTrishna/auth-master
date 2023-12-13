@@ -17,6 +17,8 @@ const Header = () => {
       <div className="navbar bg-primary text-primary-content">
         <Link className="btn btn-ghost normal-case text-xl text-white">Auth Master</Link>
         <Link className="btn btn-ghost normal-case text-xl text-white" to="/">Home</Link>
+        <Link className="btn btn-ghost normal-case text-xl text-white" to="/orders">Orders</Link>
+        {user && <Link className="btn btn-ghost normal-case text-xl text-white" to="/profile">Profile</Link>}
         <Link className="btn btn-ghost normal-case text-xl text-white" to="/login">Login</Link>
         <Link className="btn btn-ghost normal-case text-xl text-white" to="/register">Register</Link>
         {
